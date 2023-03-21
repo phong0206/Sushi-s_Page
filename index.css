@@ -1,0 +1,104 @@
+.button-container {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.button {
+
+    background-color: rgb(205, 40, 11);
+    border: none;
+    color: white;
+    padding: 9px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 0px;
+    font-weight: bold;
+    border-radius: 0 0 10px 10px;
+}
+
+span {
+    color: #fff;
+    margin: 0 40px;
+}
+#slide-down-btn {
+    position: fixed;
+    top: 0px;
+    transition: bottom 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+body{
+   
+    background-image: url("./view/istockphoto-1094462968-170667a.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+/* Slide Show */
+
+
+.carousel-item img {
+    width: 100%;
+    height:fit-content;
+}
+
+
+
+
+
+/* thiết lập style cho slideshow container */
+.carousel-inner {
+    display: block;  
+    object-fit:cover;
+    position: relative;
+    margin-top: 60px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 1%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+    transform: translateY(-100%);
+    z-index: 1;
+}
+
+.carousel-control-prev {
+    left: 50%;
+    margin-left: 10%;
+}
+
+.carousel-control-next {
+    right: 50%;
+    margin-right: 10%;
+}
+
+
+
+/* .carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(240, 234, 234, 0.8);
+} */
+
+
+
