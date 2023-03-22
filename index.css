@@ -34,10 +34,13 @@ span {
 
 body{
    
-    background-image: url("./view/istockphoto-1094462968-170667a.jpg"); 
+    background-image: url("./view/O0sR4X2H20210829064225.jpg"); 
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
+    background-attachment: fixed;
+    
+    
 }
 
 /* Slide Show */
@@ -47,10 +50,6 @@ body{
     width: 100%;
     height:fit-content;
 }
-
-
-
-
 
 /* thiết lập style cho slideshow container */
 .carousel-inner {
@@ -63,9 +62,6 @@ body{
     transform: translateX(-50%);
 
 }
-
-
-
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -94,11 +90,57 @@ body{
 }
 
 
-
-/* .carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color: rgba(240, 234, 234, 0.8);
-} */
+/* For me */
+/* 1 */
+.image-container1 {
+    position: relative;
+}
+.img_for_me1 {
+    position: absolute;
+    top: -60px;
+    left: 39%;
+    max-width: 100%;
+    height: auto;
+    width: 596px;     
+}
+.text-overlay1 {
+    border-radius: 14px;
+    background-color: aliceblue;
+    height: 160px;
+    width: 370px;
+    position: absolute;
+    top: 260px;
+    left: 30%;
+    transform: translate(-50%, -120%);
+    z-index: 1;
+    text-align:start;
+    padding: 10px;
+}
+/* 2 */
+.image-container2 {
+    position: relative;
+}
+.img_for_me2 {
+    position: absolute;
+    top: 57vh;
+    right: 39%;
+    max-width: 100%;
+    height: 400px;
+    width: 596px;
+}
+.text-overlay2 {
+    border-radius: 14px;
+    background-color: aliceblue;
+    height: 160px;
+    width: 370px;
+    position: absolute;
+    top: 700px;
+    right: 2%;
+    transform: translate(-50%, -120%);
+    z-index: 1;
+    text-align: start;
+    padding: 10px;
+}
 
 
 
