@@ -1,5 +1,5 @@
 .button-container {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -11,20 +11,20 @@
     background-color: rgb(205, 40, 11);
     border: none;
     color: white;
-    padding: 9px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 13px;
-    margin-right: 0px;
+    font-size: 16px;
     font-weight: bold;
     border-radius: 0 0 10px 10px;
+    height: 35px;
 }
 
 span {
     color: #fff;
     margin: 0 40px;
 }
+
 #slide-down-btn {
     position: fixed;
     top: 0px;
@@ -32,61 +32,56 @@ span {
     z-index: 9999;
 }
 
-body{
-   
-    background-image: url("./view/O0sR4X2H20210829064225.jpg"); 
+body {
+
+    background-image: url("./view/O0sR4X2H20210829064225.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
     background-attachment: fixed;
-    
-    
+
+
 }
 
 /* Slide Show */
-
-
+.slideshow{
+    width: 80vw;  
+}
 .carousel-item img {
     width: 100%;
-    height:fit-content;
+    height: fit-content;
 }
 
 /* thiết lập style cho slideshow container */
 .carousel-inner {
-    display: block;  
-    object-fit:cover;
+    width: 900px;
+    height: 566.97px;
+    
+    height: auto;
+    display: block;
+    object-fit: cover;
     position: relative;
-    margin-top: 60px;
+    margin: 50px 0 0 140px;
     left: 50%;
-    right: 50%;
     transform: translateX(-50%);
 
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 1%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    font-weight: bold;
+.carousel-control-prev-icon{
+    top: calc(50% - (33px)/ 2);
     position: absolute;
-    width: 100%;
-    height: 100%;
-    margin-top: -20px;
-    transform: translateY(-100%);
+    width: 33px;
+    height: 33px;
+    margin-left: 20vw;
+}
+.carousel-control-next-icon {
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    margin-top: 0vw;
+    margin-left: 77vw;
     z-index: 1;
-}
-
-.carousel-control-prev {
-    left: 50%;
-    margin-left: 10%;
-}
-
-.carousel-control-next {
-    right: 50%;
-    margin-right: 10%;
+    top:calc(50% - (33px)/ 2);
 }
 
 
@@ -95,14 +90,16 @@ body{
 .image-container1 {
     position: relative;
 }
+
 .img_for_me1 {
     position: absolute;
-    top: -60px;
-    left: 39%;
+    top: -30px;
+    left: 40%;
     max-width: 100%;
     height: auto;
-    width: 596px;     
+    width: 596px;
 }
+
 .text-overlay1 {
     border-radius: 14px;
     background-color: aliceblue;
@@ -110,16 +107,18 @@ body{
     width: 370px;
     position: absolute;
     top: 260px;
-    left: 30%;
+    left: 32%;
     transform: translate(-50%, -120%);
     z-index: 1;
-    text-align:start;
+    text-align: start;
     padding: 10px;
 }
+
 /* 2 */
 .image-container2 {
     position: relative;
 }
+
 .img_for_me2 {
     position: absolute;
     top: 57vh;
@@ -128,6 +127,7 @@ body{
     height: 400px;
     width: 596px;
 }
+
 .text-overlay2 {
     border-radius: 14px;
     background-color: aliceblue;
@@ -135,12 +135,68 @@ body{
     width: 370px;
     position: absolute;
     top: 700px;
-    right: 2%;
+    right: 6%;
     transform: translate(-50%, -120%);
     z-index: 1;
     text-align: start;
     padding: 10px;
 }
 
+/* Responsive */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
+    /* navbar */
+    .button-container {
 
+        width: 110vh;
+    }
+
+    #button1 {
+        margin-left: 32vw;
+    }
+
+    .button {
+        width: 130px;
+        height: auto;
+        font-size: 15px;
+        line-height: 40px;
+    }
+
+    .span1 {
+        margin: 0 5px 0 0;
+    }
+
+    .span2 {
+        margin: 0 0 0 5px;
+
+    }
+
+    /* slide show */
+    .slideshow {
+        width: 120vw;
+        margin-left: 10vw;
+    }
+
+    .carousel-control-prev-icon {
+        margin-left: 0vw;
+    }
+    .carousel-control-next-icon {
+        margin-left: 112vw;
+    }
+    .carousel-inner {
+        margin: 70px 0 0 0px;
+        width: 600px;
+        height: auto;
+    }
+
+    /* for me */
+    .image-container1 {
+        margin: 3vh 4vw;
+        width: 400px;
+        height: auto;
+    }
+
+    .text-overlay1 {
+        width: 60vw;
+    }
+}
