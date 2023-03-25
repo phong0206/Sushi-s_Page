@@ -48,22 +48,24 @@ body {
     width: 80vw;  
 }
 .carousel-item img {
-    width: 100%;
+    width: 70%;
     height: fit-content;
 }
 
 /* thiết lập style cho slideshow container */
 .carousel-inner {
-    width: 900px;
-    height: 566.97px;
+    
+    
     
     height: auto;
     display: block;
     object-fit: cover;
     position: relative;
-    margin: 50px 0 0 140px;
-    left: 50%;
+    margin: 50px 0 0 0;
+    left: 76.3%;
     transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -72,14 +74,13 @@ body {
     position: absolute;
     width: 33px;
     height: 33px;
-    margin-left: 20vw;
+    margin-left: 21vw;
 }
 .carousel-control-next-icon {
     position: absolute;
     width: 33px;
     height: 33px;
-    margin-top: 0vw;
-    margin-left: 77vw;
+    margin: 0 0 0 7.4rem; /* assuming parent container font-size is 10px */
     z-index: 1;
     top:calc(50% - (33px)/ 2);
 }
@@ -89,12 +90,13 @@ body {
 /* 1 */
 .image-container1 {
     position: relative;
+    
 }
 
 .img_for_me1 {
     position: absolute;
-    top: -30px;
-    left: 40%;
+    top: 30px;
+    left: 37%;
     max-width: 100%;
     height: auto;
     width: 596px;
@@ -107,7 +109,7 @@ body {
     width: 370px;
     position: absolute;
     top: 260px;
-    left: 32%;
+    left: 33%;
     transform: translate(-50%, -120%);
     z-index: 1;
     text-align: start;
@@ -122,7 +124,7 @@ body {
 .img_for_me2 {
     position: absolute;
     top: 57vh;
-    right: 39%;
+    right: 38%;
     max-width: 100%;
     height: 400px;
     width: 596px;
@@ -135,12 +137,224 @@ body {
     width: 370px;
     position: absolute;
     top: 700px;
-    right: 6%;
+    right: 9.5%;
     transform: translate(-50%, -120%);
     z-index: 1;
     text-align: start;
     padding: 10px;
 }
+.list_food{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 124vh;
+    
+}
+.title{
+    text-align: center;
+    font-size: 35px;
+    color: red;
+    margin-bottom: 30px;
+    
+}
+.grid {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18%;
+}
+
+.grid-iteml {
+    left: 3vw;
+    width: 250px;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    position: relative;
+}
+
+.caption {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+/*  */
+.grid-container {
+    margin-top: 10vh;
+    height: 74vh;
+    margin-inline: auto;
+    width: 57vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns:  35% 65%;
+}
+.layer_col_1{
+    display: grid;
+    grid-template-rows: 70% 30%;
+}
+.layer_col_2{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.layer_row_2{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    
+}
+.layer_row_3{
+    display: grid;
+    grid-template-columns: 47% 53%;
+}
+.side_bar1{
+    padding: 10px;
+    font-size: 70px;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 80px;
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
+}
+.side_bar2{
+    margin-top: -100px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: left;
+    box-sizing: border-box;
+    line-height: 24px;
+
+
+}
+.side_bar3{
+    background-image: url(./view/bff_3377-20210829071147.jpg);
+    display: block;
+        max-width: 300px;
+        max-height: 400px;
+        width: auto;
+        height: auto;
+        background-attachment:local;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+}
+.cap1{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 30vh;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: -20px;
+    text-transform: uppercase;
+
+}
+
+.side_bar4{
+background-image: url(./view/bff_8502-20210829070848.jpg);
+    display: block;
+    max-width: 300px;
+    max-height: auto;
+    width: auto;
+    height: auto;
+    background-attachment: local;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 12vh;
+}
+.cap2 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -10vh;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: -60px;
+    text-transform: uppercase;
+
+}
+.side_bar5 {
+    background-image: url(./view/3-20210829071015.jpg);
+    display: block;
+    max-width: 250px;
+    max-height: auto;
+    width: auto;
+    height: auto;
+    background-attachment: local;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    
+}
+
+.cap3 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 25vh;
+    font-size: 26px;
+    font-weight: bold;
+    margin-left: -20px;
+    text-transform: uppercase;
+
+}
+.side_bar6 {
+    background-image: url(./view/lets-sushi-ha-dong-3-20220511115129.gif);
+    display: block;
+    max-width: 300px;
+    max-height: auto;
+    width: auto;
+    height: auto;
+    background-attachment: local;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 6vh;
+}
+
+.cap4 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -6vh;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: -20px;
+    text-transform: uppercase;
+
+}
+.grid-contai {
+    margin-top: 10vh;
+    height: 50vh;
+    margin-inline: auto;
+    width: 57vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.video{
+    
+}
+.address{
+    background-color: #9c0606;
+    padding: 5px;
+}
+.til{
+    line-height: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+.para{
+    font-size: 15px;
+    color: #fff;
+    line-height: 18px;
+}
+
+
+
+
+
+
+
 
 /* Responsive */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -176,6 +390,10 @@ body {
         width: 120vw;
         margin-left: 10vw;
     }
+        .carousel-item img {
+            width: 70%;
+            height: fit-content;
+        }
 
     .carousel-control-prev-icon {
         margin-left: 0vw;
@@ -185,8 +403,6 @@ body {
     }
     .carousel-inner {
         margin: 70px 0 0 0px;
-        width: 600px;
-        height: auto;
     }
 
     /* for me */
@@ -197,6 +413,6 @@ body {
     }
 
     .text-overlay1 {
-        width: 60vw;
+        width: 0vw;
     }
 }

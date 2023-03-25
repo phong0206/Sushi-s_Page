@@ -34,4 +34,5 @@ window.onscroll = function () { scrollFunction() };
                 slides[slideIndex - 1].style.display = "block";
                 
 }
+
             
