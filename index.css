@@ -55,8 +55,6 @@ body {
 /* thiết lập style cho slideshow container */
 .carousel-inner {
     
-    
-    
     height: auto;
     display: block;
     object-fit: cover;
@@ -80,7 +78,7 @@ body {
     position: absolute;
     width: 33px;
     height: 33px;
-    margin: 0 0 0 7.4rem; /* assuming parent container font-size is 10px */
+    margin: 0 0 0 75vw; /* assuming parent container font-size is 10px */
     z-index: 1;
     top:calc(50% - (33px)/ 2);
 }
@@ -323,21 +321,20 @@ background-image: url(./view/bff_8502-20210829070848.jpg);
 
 }
 .grid-contai {
-    margin-top: 10vh;
+    margin-top: 2vh;
     height: 50vh;
     margin-inline: auto;
-    width: 57vw;
+    width: 60vw;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
 }
-.video{
-    
-}
+
 .address{
     background-color: #9c0606;
-    padding: 5px;
+    padding: 25px;
 }
 .til{
+    
     line-height: 20px;
     font-size: 22px;
     font-weight: bold;
@@ -346,7 +343,12 @@ background-image: url(./view/bff_8502-20210829070848.jpg);
 .para{
     font-size: 15px;
     color: #fff;
-    line-height: 18px;
+    line-height: 16px;
+}
+.contact{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
 }
 
 
